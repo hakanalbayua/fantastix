@@ -1,0 +1,45 @@
+HTML5 Video - Nasıl Çalışır
+HTML5'te video görüntülemek için yapmanız gereken tek şey:
+
+Örnek
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Tarayıcınız bu özelliği desteklemiyor.
+</video>
+
+Kendin Dene »
+"control" özelliği, "play, pause, ses" gibi denetimleri ekler.
+
+Ayrıca genişlik ve yükseklik ayarlarını belirtmek iyi bir fikirdir. Eğer ayarlanırsa, video için gerekli boşluk sayfa yüklenirken ayarlanır. Ancak, bunlar yoksa, tarayıcı ne kadar alan ayıracağını bilemez.
+
+<video> elementi çoklu kaynak (<source>) kullanımına izin verir. <source> elementi farklı ses dosyalarına bağlantıya izin verir. Tarayıcı, ilk tanımlayabildiği dosyayı kullanır.
+
+Video Formatları ve Tarayıcı Desteği
+Şu an için <video> elementini destekleyen üç format bulunmaktadır: MP4, WebM ve Ogg:
+
+Tarayıcı	MP4	WebM	Ogg
+Internet Explorer	EVET	HAYIR	HAYIR
+Chrome	EVET	EVET	EVET
+Firefox	NO
+EVET	EVET
+Safari	EVET	HAYIR	HAYIR
+Opera	HAYIR	EVET	EVET
+MP4 = MPEG 4 dosyaları. H264 video codec ve AAC audio codec ile
+WebM = WebM dosyaları. VP8 video codec ve Vorbis audio codec ile
+Ogg = Ogg dosyaları. Theora video codec ve Vorbis audio codec ile
+Video Formatları için MIME Tipleri
+Format	MIME Tipi
+MP4	video/mp4
+WebM	video/webm
+Ogg	video/ogg
+
+HTML5 <video> - DOM Metodu ve Özellikleri
+HTML5 <video> ve <audio> elementleri için DOM metodları, özellikleri ve olayları vardır.
+
+Bu metodlar, özellikler ve olaylar JavaScript kullanarak medya dosyalarını kontrol etmenizi sağlar.
+
+Aşağıda bunun bir örneği görülmektedir.
+
+Örnek
+Bir video için basit oynat/duraklat ve boyutlandır kontrolleri oluşturma:
